@@ -18,5 +18,9 @@ variable "enable_versioning" {
 variable "tags" {
   description = "A map of tags to apply to the bucket"
   type        = map(string)
+  default = {
+    "Environment" = "production"
+    "Name"        = "my-tf-bucket"
+  }
 }
 
